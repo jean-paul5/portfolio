@@ -1,0 +1,182 @@
+:root{
+    --blue : #8EC8F6;
+    --border: #8EC8F6;
+    --bg: #fff;
+    --textColor : #8EC8F6;
+    --black: black;
+
+}
+
+#header{
+    background-color: var(--bg);
+    color: #0D1520;
+}
+
+#body{
+    background-color: var(--bg);
+    color: var(--textColor);
+    font-weight: bolder;
+
+}
+#nom{
+    color: var(--black);
+    font-size: 3em;
+    flex-wrap: wrap;
+    font-weight: bolder;
+    text-align: start;
+}
+#parole{
+    font-size: 1.3em;
+    flex-wrap: wrap;
+    font-weight: bolder;
+    text-align: start;
+}
+#button{
+    background-color: var(--border);
+    color: var(--black);
+    /* height: 15%; */
+    padding: 10px;
+    border-radius: 50px;
+    font-weight: bolder;
+
+}
+
+#image{
+    width: 65%;
+    
+}
+#image3{
+    height: 100%;
+    width: 100%;
+}
+#style{
+    color: var(--black);
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+#projets{
+    color: var(--black);
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bolder;
+}
+#aecrit{
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bolder;
+    color: var(--black);
+}
+#formulaire{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    
+}
+#haut{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 2%;
+}
+#nom2{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    width: 50%;
+}
+
+#input{
+    width: 100%;
+}
+#bas{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px rgb(55, 0, 255) solid; */
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+}
+#message{
+    color: var(--textColor);
+    font-weight: bolder;
+}
+.text{
+    width: 100%;
+}
+
+
+
+
+/* // responsive */
+@media screen and (max-width : 800px) {
+    #image3{
+        width: 100%;
+    }
+    #image{
+        margin-top: 10px;
+        width: 100%;
+    }
+    #nom{
+        width: 100%;
+        font-size: 2em;
+    }
+}
+
+
+/* mode nuit */
+
+#dark{
+    color: wheat;
+    padding: 5px;
+    background-color: black;
+    border-radius: 60px;
+    position: fixed;
+    right: 10px;
+    
+}
+#body.darkmode{
+    --black : white;
+    --blue : #003362;
+    --border: #205D9E;
+    --bg: #0D1520;
+    --textColor : #70B8FF;
+
+}
+
+#icone{
+    height: 50px;
+    width: 50px;
+}
+
+#message1{
+   
+
+}
+#success{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    color: #20c997;
+    background-color: #adecd9;
+}
+#error{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    color: #eb3535;
+    background-color: #d88989;
+}   
+#del{
+    cursor: pointer;
+    padding: 5px;
+    border: solid;
+    border-radius: 5px;
+    position: absolute;
+    right: 5px;
+    top: 0;
+}
